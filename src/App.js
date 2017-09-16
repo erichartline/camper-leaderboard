@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
 
 class App extends Component {
@@ -7,12 +7,21 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Camper Leaderboard</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <table>
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Camper Name</td>
+              <td>Points in Last 30 Days</td>
+              <td>All Time Points</td>
+            </tr>
+          </thead>
+          <tbody>
+            // props
+          </tbody>
+        </table>
       </div>
     );
   }
