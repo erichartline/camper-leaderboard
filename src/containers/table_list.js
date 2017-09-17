@@ -7,6 +7,8 @@ class DataTable extends Component {
     const allTime = userData.alltime;
     const recent = userData.recent;
 
+    console.log(name, allTime, recent)
+
     return (
       <tr key={name}>
         <td>{name}</td>
