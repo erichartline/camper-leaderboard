@@ -23,7 +23,7 @@ class App extends Component {
         this.setState({ recentUsers: recentUsers.data, allTimeUsers: allTimeUsers.data });
     }));
   }
-  
+
   fetchRecentUsers() {
     return axios.get(RECENT);
   }
@@ -43,7 +43,7 @@ class App extends Component {
 
     return (
       <div className="container">
-        <table className="table table-hover">
+        <table className="table table-hover table-striped">
           <thead>
             <tr>
               Leaderboard
