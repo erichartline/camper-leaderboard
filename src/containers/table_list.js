@@ -1,23 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 class DataTable extends Component {
-  renderRecentUsers(userData) {
-    const name = userData.username;
-    const allTime = userData.alltime;
-    const recent = userData.recent;
-
-    console.log(name, allTime, recent)
-
-    return (
-      <tr key={name}>
-        <td>{name}</td>
-        <td>{name}</td>
-        <td>{name}</td>
-        <td>{name}</td>
-      </tr>
-    )
-  }
 
   render() {
     return (
@@ -31,15 +14,11 @@ class DataTable extends Component {
           </tr>
         </thead>
         <tbody>
-          {this.props.recent.map(this.renderRecentUsers)}
+
         </tbody>
       </table>
     )
   }
 }
 
-function mapStateToProps({ recent, alltime }) {
-  return { recent, alltime };
-}
-
-export default connect(mapStateToProps)(DataTable);
+export default DataTable;
