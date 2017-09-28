@@ -11,3 +11,5 @@ User Stories:
 * I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total.
 
 Original freeCodeCamp challenge: [https://www.freecodecamp.org/challenges/build-a-camper-leaderboard](https://www.freecodecamp.org/challenges/build-a-camper-leaderboard)
+
+https://travis-ci.org/wildlifehexagon/camper-leaderboard.svg?branch=master
