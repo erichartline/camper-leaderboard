@@ -8,9 +8,9 @@ img {
   height: 40px;
 }
 
-h1 {
+h2 {
   text-align: center;
-  color: #000;
+  color: #464646;
 }
 
 thead {
@@ -49,4 +49,12 @@ tbody {
 
 .item {
   text-align: center;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+.fcc-icon {
+  color: #006400;
 }
