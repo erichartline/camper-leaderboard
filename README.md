@@ -1,7 +1,7 @@
 # Camper Leaderboard
-FCC challenge.
+FCC challenge. Work in progress.
 
-Live Demo: Coming soon
+Live Demo: [http://fcc-camper-leaderboard.surge.sh/](http://fcc-camper-leaderboard.surge.sh/)
 
 Built with React.
 

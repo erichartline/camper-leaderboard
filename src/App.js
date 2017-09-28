@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import TableList from './containers/table_list';
+import Header from './components/header';
 import Footer from './components/footer';
 import './style/App.css';
 
@@ -35,6 +36,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Header />
         <TableList users={this.state.recentUsers} />
         <Footer />
       </div>
