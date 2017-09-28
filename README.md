@@ -12,4 +12,4 @@ User Stories:
 
 Original freeCodeCamp challenge: [https://www.freecodecamp.org/challenges/build-a-camper-leaderboard](https://www.freecodecamp.org/challenges/build-a-camper-leaderboard)
 
-https://travis-ci.org/wildlifehexagon/camper-leaderboard.svg?branch=master
+![Travis-CI Badge](https://travis-ci.org/wildlifehexagon/camper-leaderboard.svg?branch=master)
