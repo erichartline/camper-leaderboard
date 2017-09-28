@@ -23,7 +23,10 @@ class App extends Component {
     axios.all([this.fetchRecentUsers(), this.fetchAllTimeUsers()])
       .then(axios.spread((recentUsers, allTimeUsers) => {
         this.setState({ recentUsers: recentUsers.data, allTimeUsers: allTimeUsers.data });
-    }));
+    }))
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   fetchRecentUsers() {
