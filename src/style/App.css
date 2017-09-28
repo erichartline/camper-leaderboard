@@ -1,3 +1,8 @@
+body {
+  margin-top: 5px;
+  background-color: white;
+}
+
 img {
   width: 40px;
   height: 40px;
@@ -5,4 +10,28 @@ img {
 
 h1 {
   text-align: center;
+}
+
+thead {
+  background-color: #299C29;
+}
+
+.header {
+  background-color: #006400;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer {
+  background-color: #006400;
+  text-align: center;
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
+
+.title {
+  background-color: #006400;
 }

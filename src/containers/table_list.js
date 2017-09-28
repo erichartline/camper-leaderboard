@@ -8,22 +8,22 @@ const TableList = ({ users }) => {
   });
 
   return (
-    <table className="table table-hover table-striped">
-      <thead>
-        <tr>
-          <h1>Leaderboard</h1>
-        </tr>
-        <tr>
-          <td>#</td>
-          <td>Camper Name</td>
-          <td>Points in Last 30 Days <i className="fa fa-caret-down" aria-hidden="true"></i></td>
-          <td>All Time Points <i className="fa fa-caret-down" aria-hidden="true"></i></td>
-        </tr>
-      </thead>
-      <tbody>
-        {Items}
-      </tbody>
-    </table>
+    <div className="container">
+      <table className="table table-hover table-striped">
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Camper Name</td>
+            <td>Points in Last 30 Days <i className="fa fa-caret-down" aria-hidden="true"></i></td>
+            <td>All Time Points <i className="fa fa-caret-down" aria-hidden="true"></i></td>
+            <td>Last Activity</td>
+          </tr>
+        </thead>
+        <tbody>
+          {Items}
+        </tbody>
+      </table>
+    </div>
   )
 }
 

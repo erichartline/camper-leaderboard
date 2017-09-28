@@ -5,6 +5,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import './style/App.css';
 
+// set variables for FCC APIs
 const RECENT = 'https://fcctop100.herokuapp.com/api/fccusers/top/recent';
 const ALLTIME = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime';
 
@@ -35,9 +36,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Header />
-        <TableList users={this.state.recentUsers} />
+        <div className="container">
+          <TableList users={this.state.recentUsers} />
+        </div>
         <Footer />
       </div>
     )

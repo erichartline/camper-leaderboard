@@ -2,7 +2,9 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <h1>Header</h1>
+    <div className="header">
+      <h1>freeCodeCamp Leaderboard</h1>
+    </div>
   )
 }
 
