@@ -9,11 +9,11 @@ const TableListItem = ({ user, number }) => {
 
   return (
     <tr>
-      <td>{number}</td>
+      <td className="item">{number}</td>
       <td><img src={image} className="thumbnail" alt="user thumbnail" />&nbsp;<a href={`https://www.freecodecamp.org/${name}`} target='_blank'>{name}</a></td>
-      <td>{recent}</td>
-      <td>{allTime}</td>
-      <td>{activity}</td>
+      <td className="item">{recent}</td>
+      <td className="item">{allTime}</td>
+      <td className="item">{activity}</td>
     </tr>
   );
 }

@@ -9,14 +9,14 @@ const TableList = ({ users }) => {
 
   return (
     <div className="container">
-      <table className="table table-hover table-striped">
+      <table className="table">
         <thead>
           <tr>
-            <td>#</td>
+            <td className="item">#</td>
             <td>Camper Name</td>
-            <td>Points in Last 30 Days <i className="fa fa-caret-down" aria-hidden="true"></i></td>
-            <td>All Time Points <i className="fa fa-caret-down" aria-hidden="true"></i></td>
-            <td>Last Activity</td>
+            <td className="item">Points in Last 30 Days <i className="fa fa-caret-down" aria-hidden="true"></i></td>
+            <td className="item">All Time Points <i className="fa fa-caret-down" aria-hidden="true"></i></td>
+            <td className="item">Last Activity</td>
           </tr>
         </thead>
         <tbody>

@@ -1,3 +1,8 @@
+body {
+  margin-top: 5px;
+  background-color: #DDEFDF;
+}
+
 img {
   width: 40px;
   height: 40px;
@@ -5,8 +10,43 @@ img {
 
 h1 {
   text-align: center;
+  color: #000;
 }
 
-.header, .footer {
+thead {
+  background-color: #59A562;
+  font-weight: bold;
+}
+
+tbody {
+  tr:nth-child(even) {
+    background-color: #DCDCDC;
+  }
+  tr:nth-child(odd) {
+    background-color: #F8F8F8;
+  }
+  tr:hover {
+    background-color: #B4DBB9;
+  }
+}
+
+.header {
+  margin-bottom: 10px;
+  color: rgb(114,126,127);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #59A562;
+}
+
+.title {
   background-color: #006400;
+}
+
+.item {
+  text-align: center;
 }

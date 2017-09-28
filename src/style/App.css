@@ -1,37 +1,40 @@
 body {
   margin-top: 5px;
-  background-color: white;
-}
+  background-color: #DDEFDF; }
 
 img {
   width: 40px;
-  height: 40px;
-}
+  height: 40px; }
 
 h1 {
   text-align: center;
-}
+  color: #000; }
 
 thead {
-  background-color: #299C29;
-}
+  background-color: #59A562;
+  font-weight: bold; }
+
+tbody tr:nth-child(even) {
+  background-color: #DCDCDC; }
+
+tbody tr:nth-child(odd) {
+  background-color: #F8F8F8; }
+
+tbody tr:hover {
+  background-color: #B4DBB9; }
 
 .header {
-  background-color: #006400;
   margin-bottom: 10px;
-  color: white;
-}
+  color: #727e7f; }
 
 .footer {
-  background-color: #006400;
-  text-align: center;
-  color: white;
-}
+  text-align: center; }
 
 .footer a {
-  color: white;
-}
+  color: #59A562; }
 
 .title {
-  background-color: #006400;
-}
+  background-color: #006400; }
+
+.item {
+  text-align: center; }
