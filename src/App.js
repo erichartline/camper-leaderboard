@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
+
 import TableList from './containers/table_list';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -25,7 +27,7 @@ class App extends Component {
         this.setState({ recentUsers: recentUsers.data, allTimeUsers: allTimeUsers.data });
     }))
       .catch((error) => {
-        console.log(error);
+        console.log(error)
       });
   }
 
@@ -50,4 +52,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => (
+  { recentUsers: state.recentUsers }
+)
+
+export default connect(mapStateToProps, null)(App);
