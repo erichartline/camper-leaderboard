@@ -12,7 +12,8 @@ import './style/App.css';
 const RECENT = 'https://fcctop100.herokuapp.com/api/fccusers/top/recent';
 const ALLTIME = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime';
 
-class App extends Component {
+// use named export for unconnected component (for tests)
+export class App extends Component {
   constructor(props) {
     super(props);
 
@@ -57,4 +58,5 @@ const mapStateToProps = state => (
   { recentUsers: state.recentUsers, allTimeUsers: state.allTimeUsers }
 )
 
+// use default export for the connected component (for app)
 export default connect(mapStateToProps)(App);
