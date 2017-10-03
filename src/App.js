@@ -22,7 +22,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     axios.all([this.fetchRecentUsers(), this.fetchAllTimeUsers()])
       .then(axios.spread((recentUsers, allTimeUsers) => {
         this.setState({ recentUsers: recentUsers.data, allTimeUsers: allTimeUsers.data });
@@ -44,9 +44,9 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <div className="container">
-          <TableList users={this.state.recentUsers} />
-        </div>
+          <div className="container">
+            <TableList users={this.state.recentUsers} />
+          </div>
         <Footer />
       </div>
     )
@@ -54,7 +54,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => (
-  { recentUsers: state.recentUsers }
+  { recentUsers: state.recentUsers, allTimeUsers: state.allTimeUsers }
 )
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps)(App);
