@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import TableList from './containers/table_list';
 import Header from './components/header';
 import Footer from './components/footer';
+
 import './style/App.css';
 
 // set variables for FCC APIs
