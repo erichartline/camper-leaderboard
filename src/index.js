@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootReducer from './reducers/index';
 
-import './style/index.css';
+import rootReducer from './reducers/index';
 import App from './App';
+import './style/index.css';
 
 const store = createStore(rootReducer);
 
