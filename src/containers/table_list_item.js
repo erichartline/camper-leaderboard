@@ -10,7 +10,7 @@ const TableListItem = ({ user, number }) => {
   return (
     <tr>
       <td className="item">{number}</td>
-      <td><img src={image} className="thumbnail" alt="user thumbnail" />&nbsp;<a href={`https://www.freecodecamp.org/${name}`} target='_blank'>{name}</a></td>
+      <td><img src={image} className="thumbnail" alt="user thumbnail" />&nbsp;<a href={`https://www.freecodecamp.org/${name}`} rel="noreferrer noopener" target='_blank'>{name}</a></td>
       <td className="item">{recent}</td>
       <td className="item">{allTime}</td>
       <td className="item">{activity}</td>
