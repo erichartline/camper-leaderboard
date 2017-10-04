@@ -1,9 +1,9 @@
 # Camper Leaderboard
-FCC challenge. Work in progress.
+Points leaderboard for freeCodeCamp users. Can be sorted by recent or all-time points.
 
 Live Demo: [http://fcc-camper-leaderboard.surge.sh/](http://fcc-camper-leaderboard.surge.sh/)
 
-Built with React.
+Built with React, Redux and Sass.
 
 User Stories:
 * I can see a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days.
