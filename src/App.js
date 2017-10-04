@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 
+// import individual components
 import TableList from './containers/table_list';
 import Header from './components/header';
 import Footer from './components/footer';
 
+// import spreadsheet
 import './style/App.css';
 
 // set variables for FCC APIs
@@ -41,12 +43,14 @@ export class App extends Component {
     return axios.get(ALLTIME);
   }
 
+
+
   render() {
     return (
       <div>
         <Header />
           <div className="container">
-            <TableList users={this.state.recentUsers} />
+            <TableList recentUsers={this.state.recentUsers} allTimeUsers={this.state.allTimeUsers} />
           </div>
         <Footer />
       </div>
