@@ -23,6 +23,9 @@ tbody tr:nth-child(odd) {
 tbody tr:hover {
   background-color: #B4DBB9; }
 
+.title {
+  background-color: #006400; }
+
 .header {
   margin-bottom: 10px;
   color: #727e7f; }
@@ -32,9 +35,6 @@ tbody tr:hover {
 
 .footer a {
   color: #59A562; }
-
-.title {
-  background-color: #006400; }
 
 .item {
   text-align: center; }

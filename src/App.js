@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 
-// import individual components
+// import individual components and spreadsheet
 import TableList from './containers/table_list';
 import Header from './components/header';
 import Footer from './components/footer';
-
-// import spreadsheet
 import './style/App.css';
 
 // set variables for FCC APIs
