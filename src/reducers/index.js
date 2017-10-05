@@ -4,7 +4,7 @@ import AllTimeUserReducer from './reducer_alltime';
 
 const rootReducer = combineReducers({
   recent: RecentUserReducer,
-  alltime: AllTimeUserReducer
+  allTime: AllTimeUserReducer
 });
 
 export default rootReducer;

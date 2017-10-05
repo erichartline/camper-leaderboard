@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import TableListItem from './table_list_item';
+import { fetchRecentUsers, fetchAllTimeUsers } from '../actions/index';
+import store from '../store/store';
 
 class TableList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      showArrow: true
-    }
+  componentWillMount() {
+    this.props.dispatch(fetchRecentUsers());
   }
 
   sortTable(value) {
@@ -17,8 +16,7 @@ class TableList extends Component {
   }
 
   render() {
-    const { recentUsers, allTimeUsers } = this.props;
-    const { showArrow } = this.state;
+    const { recentUsers, allTimeUsers, showArrow } = this.props;
 
     const recentList = recentUsers.map((user, index) => {
       return <TableListItem key={index} user={user} number={index + 1}/>
@@ -48,8 +46,10 @@ class TableList extends Component {
       </div>
     )
   }
-
-
 }
 
-export default TableList;
+const mapStateToProps = (store) => (
+  { recentUsers: store.recentUsers, allTimeUsers: store.allTimeUsers, showArrow: true }
+)
+
+export default connect(mapStateToProps)(TableList);
