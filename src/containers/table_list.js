@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import TableListItem from './table_list_item';
-import { fetchRecentUsers } from '../actions/index';
+import { fetchRecentUsers, fetchAllTimeUsers } from '../actions/index';
 
 class TableList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showArrow: true
+    }
+  }
+
   componentWillMount() {
     this.props.dispatch(fetchRecentUsers());
   }
@@ -11,12 +19,14 @@ class TableList extends Component {
   sortTable(value) {
     if (this.state.showArrow !== value) {
       this.setState({ showArrow: value });
+      this.props.dispatch(fetchAllTimeUsers());
     }
   }
 
   render() {
     console.log(this.props)
-    const { recentUsers, allTimeUsers, showArrow } = this.props;
+    const { recentUsers, allTimeUsers } = this.props;
+    const { showArrow } = this.state;
 
     const recentList = recentUsers.map((user, index) => {
       return <TableListItem key={index} user={user} number={index + 1}/>
@@ -49,7 +59,7 @@ class TableList extends Component {
 }
 
 const mapStateToProps = (store) => (
-  { recentUsers: store.recent.recentUsers, allTimeUsers: store.allTime.allTimeUsers, showArrow: true }
+  { recentUsers: store.recent.recentUsers, allTimeUsers: store.allTime.allTimeUsers }
 )
 
 export default connect(mapStateToProps)(TableList);
