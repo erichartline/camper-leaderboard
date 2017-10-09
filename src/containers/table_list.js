@@ -12,7 +12,7 @@ class TableList extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.dispatch(fetchRecentUsers());
   }
 
@@ -24,7 +24,6 @@ class TableList extends Component {
   }
 
   render() {
-    console.log(this.props)
     const { recentUsers, allTimeUsers } = this.props;
     const { showArrow } = this.state;
 
