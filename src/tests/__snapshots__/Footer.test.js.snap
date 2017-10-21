@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<div
+  className="footer"
+>
+  <p>
+    Written and coded by 
+    <a
+      href="http://www.erichartline.net"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Eric Hartline
+    </a>
+     for 
+    <a
+      href="http://www.freecodecamp.org/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      freeCodeCamp
+    </a>
+     
+    <i
+      aria-hidden="true"
+      className="fa fa-free-code-camp"
+    >
+      .
+    </i>
+  </p>
+</div>
+`;

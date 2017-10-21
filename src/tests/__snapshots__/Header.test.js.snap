@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<div
+  className="header"
+>
+  <h2>
+    freeCodeCamp 
+    <i
+      aria-hidden="true"
+      className="fa fa-free-code-camp fcc-icon"
+    />
+     
+    <br />
+    Camper Leaderboard
+  </h2>
+</div>
+`;
