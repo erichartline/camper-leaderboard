@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
     "node-sass-chokidar": "^0.0.3",
+    "prettier": "^1.7.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
@@ -14,7 +17,14 @@
     "redux-promise-middleware": "^4.4.1",
     "redux-thunk": "^2.2.0"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "scripts": {
+    "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -22,6 +32,7 @@
   },
   "devDependencies": {
     "enzyme": "^3.1.0",
-    "react-addons-test-utils": "^15.6.2"
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.0.0"
   }
 }
