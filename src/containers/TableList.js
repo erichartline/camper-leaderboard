@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import TableListItem from './table_list_item';
+import TableListItem from './TableListItem';
 import { fetchRecentUsers, fetchAllTimeUsers } from '../actions/index';
 
 class TableList extends Component {
