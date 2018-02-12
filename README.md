@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/wildlifehexagon/camper-leaderboard.svg?branch=master)](https://travis-ci.org/wildlifehexagon/camper-leaderboard)
+[![Dependency Status](https://david-dm.org/wildlifehexagon/camper-leaderboard/master.svg?style=flat-square)](https://david-dm.org/wildlifehexagon/camper-leaderboard)
+[![devDependency Status](https://david-dm.org/wildlifehexagon/camper-leaderboard/master/dev-status.svg?style=flat-square)](https://david-dm.org/wildlifehexagon/camper-leaderboard?type=dev)
+
 # Camper Leaderboard
 Points leaderboard for freeCodeCamp users. Can be sorted by recent or all-time points.
 
@@ -11,5 +15,3 @@ User Stories:
 * I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total.
 
 Original freeCodeCamp challenge: [https://www.freecodecamp.org/challenges/build-a-camper-leaderboard](https://www.freecodecamp.org/challenges/build-a-camper-leaderboard)
-
-![Travis-CI Badge](https://travis-ci.org/wildlifehexagon/camper-leaderboard.svg?branch=master)
