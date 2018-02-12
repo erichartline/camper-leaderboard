@@ -1,43 +1,43 @@
-import axios from 'axios';
-
 const RECENT = 'https://fcctop100.herokuapp.com/api/fccusers/top/recent';
 const ALLTIME = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime';
 
 export const FETCH_RECENT = 'FETCH_RECENT';
 export const FETCH_ALLTIME = 'FETCH_ALLTIME';
 
-export function fetchRecentUsers() {
-  return function(dispatch) {
-    axios.get(RECENT)
-      .then((response) => {
-        dispatch({
+export const fetchRecentUsers = () => {
+  return async dispatch => {
+    try {
+      const res = await fetch(RECENT)
+      const json = await res.json()
+      dispatch({
           type: FETCH_RECENT,
-          payload: response.data
+          payload: json
         });
-      })
-      .catch((error) => {
-        dispatch({
-          type: 'FETCH_RECENT_ERROR',
-          payload: error
-        });
+    }
+    catch (err) {
+      dispatch({
+        type: 'FETCH_RECENT_ERROR',
+        payload: err
       });
+    }
   }
 }
 
-export function fetchAllTimeUsers() {
-  return function(dispatch) {
-    axios.get(ALLTIME)
-      .then((response) => {
-        dispatch({
+export const fetchAllTimeUsers = () => {
+  return async dispatch => {
+    try {
+      const res = await fetch(ALLTIME)
+      const json = await res.json()
+      dispatch({
           type: FETCH_ALLTIME,
-          payload: response.data
+          payload: json
         });
-      })
-      .catch((error) => {
-        dispatch({
-          type: 'FETCH_ALLTIME_ERROR',
-          payload: error
-        });
+    }
+    catch (err) {
+      dispatch({
+        type: 'FETCH_ALLTIME_ERROR',
+        payload: err
       });
+    }    
   }
 }
